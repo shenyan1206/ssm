@@ -1,0 +1,16 @@
+{
+  "name": "ssm",
+  "version": "0.0.1",
+  "description": "SSM Service in Nodejs with similar interface as Thales Pay Shield 9000",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@shenyan1206/buffer-helper": "^1.0.2",
+    "@shenyan1206/crypto-helper": "^1.0.1",
+    "@shenyan1206/dukpt": "^1.0.4"
+  }
+}
