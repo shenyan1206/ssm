@@ -25,7 +25,7 @@ SSMService.prototype.processRequest = function(data) {
 	switch(command.toString())
 	{
 		case "A0":
-			var A0_class = require("./host_commands/A0");
+			var A0_class = require("./HostCommands/A0");
 			var A0 = new A0_class();
 			command_resp = A0.processCommand(command_data);
 			break;

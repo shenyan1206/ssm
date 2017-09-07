@@ -21,7 +21,7 @@ small set of commands supported
 
 # Commands Supported
 
-Please check wiki page for the latest info or check the host_commands/ folder in source code
+Please check wiki page for the latest info or check the HostCommands/ folder in source code
 
 # Design summary
 
@@ -30,7 +30,7 @@ Please check wiki page for the latest info or check the host_commands/ folder in
 2. SSMService.js:	first round of parsing. read header and command code, then pass to respetive command handler to process.
 
 
-3. host_commands folder:	it contains all command handler.
+3. HostCommands folder:	it contains all command handler.
 
 4. AO.js:	one example of command handler. when processing, it does 3 things: parsing, processing, format output & return.
 
