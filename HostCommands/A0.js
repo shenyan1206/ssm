@@ -1,7 +1,8 @@
-var LMKManager = require("../LMKManager");
 var BufferHelper = require("@shenyan1206/buffer-helper");
 var CryptoHelper = require("@shenyan1206/crypto-helper");
 var DUKPT = require("@shenyan1206/dukpt");
+
+var LMKManager = require("../LMKManager");
 var ErrorCode = require("../ErrorCode");
 var KeyType = require("../KeyType");
 
