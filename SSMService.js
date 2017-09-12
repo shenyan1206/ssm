@@ -29,6 +29,16 @@ SSMService.prototype.processRequest = function(data) {
 			var A0 = new A0_class();
 			command_resp = A0.processCommand(command_data);
 			break;
+		case "M0":
+			var M0_class = require("./HostCommands/M0");
+			var M0 = new M0_class();
+			command_resp = M0.processCommand(command_data);
+			break;
+		case "M2":
+			var M2_class = require("./HostCommands/M2");
+			var M2 = new M2_class();
+			command_resp = M2.processCommand(command_data);
+			break;
 		default:
 			command_resp = Buffer.from("UC:Unknown Command");
 	}

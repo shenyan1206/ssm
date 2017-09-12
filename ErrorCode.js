@@ -1,6 +1,9 @@
 function ErrorCode(){
 	this.SUCCESS = "00";
 	this.INVALID_KEY_SCHEME = "26";
+	this.INVALID_INPUT_FORMAT_FLAG = "99";
+	this.INVALID_KEY_TYPE = "98";
+	this.INVALID_KSN_DESCRIPTOR="97";
 
 }
 

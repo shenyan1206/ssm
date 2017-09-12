@@ -89,16 +89,11 @@ A0.prototype._parseRequest = function(req)
 	console.log(this);
 }
 
-A0.prototype._formatOutput = function()
-{
-	if(this.error != ErrorCode.SUCCESS) return Buffer.from(RESPOSNE_CODE+this.error);
-	else return Buffer.from(RESPOSNE_CODE+this.error+this.output);
-
-}
-
 
 A0.prototype._process = function()
 {
+
+	if(this.error != ErrorCode.SUCCESS) return; //error in previsou steps, stop processing..
 
 	var key_clear, key_lmk, kcv;
 
@@ -142,6 +137,13 @@ A0.prototype._process = function()
 
 }
 
+
+A0.prototype._formatOutput = function()
+{
+	if(this.error != ErrorCode.SUCCESS) return Buffer.from(RESPOSNE_CODE+this.error);
+	else return Buffer.from(RESPOSNE_CODE+this.error+this.output);
+
+}
 
 
 
