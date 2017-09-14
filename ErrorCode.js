@@ -4,6 +4,8 @@ function ErrorCode(){
 	this.INVALID_INPUT_FORMAT_FLAG = "99";
 	this.INVALID_KEY_TYPE = "98";
 	this.INVALID_KSN_DESCRIPTOR="97";
+	this.INVALID_SOURCE_PIN_FORMAT = "96";
+	this.INVALID_DEST_PIN_FORMAT = "97";
 
 }
 
