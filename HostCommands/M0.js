@@ -6,7 +6,7 @@ var LMKManager = require("../LMKManager");
 var ErrorCode = require("../ErrorCode");
 var KeyType = require("../KeyType");
 
-const RESPOSNE_CODE = "M1";
+const RESPOSNE_CODE = "M1"; //Encrypt Data Block
 
 
 //constructor

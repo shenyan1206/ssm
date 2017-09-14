@@ -22,26 +22,9 @@ SSMService.prototype.processRequest = function(data) {
 	console.log("header: " + header.toString()+"; command:"+command.toString());
 	var command_resp; //Buffer Type, doesn't contain header
 
-	switch(command.toString())
-	{
-		case "A0":
-			var A0_class = require("./HostCommands/A0");
-			var A0 = new A0_class();
-			command_resp = A0.processCommand(command_data);
-			break;
-		case "M0":
-			var M0_class = require("./HostCommands/M0");
-			var M0 = new M0_class();
-			command_resp = M0.processCommand(command_data);
-			break;
-		case "M2":
-			var M2_class = require("./HostCommands/M2");
-			var M2 = new M2_class();
-			command_resp = M2.processCommand(command_data);
-			break;
-		default:
-			command_resp = Buffer.from("UC:Unknown Command");
-	}
+	var command_handler_class = require("./HostCommands/"+command.toString());
+	var command_handler = new command_handler_class();
+	command_resp = command_handler.processCommand(command_data);
 
 	var length = command_resp.length + HEADER_LENGTH; //header + commnad resposne
 	var response_full = Buffer.alloc(length+2);   //length + header + command response

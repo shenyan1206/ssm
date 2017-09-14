@@ -6,7 +6,7 @@ var LMKManager = require("../LMKManager");
 var ErrorCode = require("../ErrorCode");
 var KeyType = require("../KeyType");
 
-const RESPOSNE_CODE = "A1";
+const RESPOSNE_CODE = "A1"; //Generate a Key
 
 
 //constructor
@@ -69,9 +69,7 @@ A0.prototype._parseRequest = function(req)
 
 
 		if(this.ZMK_TMK_flag == "0")
-		{
 			this.zmk_tmk_key_type = KeyType.ZMK; //ZMK
-		}
 		else
 			this.zmk_tmk_key_type = KeyType.TMK; //TMK
 
