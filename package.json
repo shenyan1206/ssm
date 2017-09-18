@@ -1,16 +1,32 @@
 {
-  "name": "ssm",
+  "name": "@shenyan1206/ssm",
   "version": "0.0.1",
   "description": "SSM Service in Nodejs with similar interface as Thales Pay Shield 9000",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
+  "author": "shenyan1206",
   "license": "ISC",
   "dependencies": {
     "@shenyan1206/buffer-helper": "^1.0.2",
     "@shenyan1206/crypto-helper": "^1.0.1",
-    "@shenyan1206/dukpt": "^1.0.4"
-  }
+    "@shenyan1206/dukpt": "^1.0.5"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shenyan1206/ssm.git"
+  },
+  "keywords": [
+    "SSM",
+    "HSM",
+    "Security",
+    "Module",
+    "Thales"
+  ],
+  "bugs": {
+    "url": "https://github.com/shenyan1206/ssm/issues"
+  },
+  "homepage": "https://github.com/shenyan1206/ssm#readme"
 }
